@@ -1,0 +1,76 @@
+
+@import 'bootstrap/bootstrap.less';
+
+@import url(http://fonts.googleapis.com/css?family=Lato:300);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+.container {max-width: 960px;}
+
+@colorBrand: 			#ffb302; // Gold
+@colorAccent: 			#ff9d01; // Darker gold
+
+@colorPrimary: 			#000;
+@colorSecondary: 		#ACACAC;
+
+@linkColor:             @colorAccent;
+@linkColorHover:        darken(@linkColor, 15%);
+
+@white:					#fff;
+@grayLight:				#777;
+
+
+
+/* == TYPE VARIABLES AND MIXINS
+===================================================== */
+
+.lightHeading {
+	font-family: 'Lato', sans-serif;
+}
+
+.gradient(@color, @start, @stop) {
+  background: @color;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, @start), color-stop(1, @stop));
+  background: -ms-linear-gradient(bottom, @start, @stop);
+  background: -moz-linear-gradient(center bottom, @start 0%, @stop 100%);
+  background: -o-linear-gradient(@stop, @start);
+  filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",@stop,@start));
+}
+
+
+
+/* == NAVBAR VARIABLES
+===================================================== */
+
+@navbarHeight: 60px;
+@navbarLineHeight: 36px;
+
+@navbarInverseBackground:                #000;
+@navbarInverseBackgroundHighlight:       #333;
+@navbarInverseBorder:                    #353535;
+
+@navbarInverseText:                      @grayLight;
+@navbarInverseLinkColor:                 @grayLight;
+@navbarInverseLinkColorHover:            @white;
+@navbarInverseLinkColorActive:           @navbarInverseLinkColorHover;
+@navbarInverseLinkBackgroundHover:       transparent;
+@navbarInverseLinkBackgroundActive:      @navbarInverseBackground;
+
+@navbarInverseBrandColor:                @navbarInverseLinkColor;
+
+
+
+/* == PAGE-WRANGLER VARIABLES
+===================================================== */
+
+@roundedCorners:	5px;	
+
+
+
+/* == VIEWS AND COMPONENTS
+===================================================== */
+
+@import 'components/navbar.less';
+@import "components/footer.less";
+
+@import "views/home.less";
+@import "views/wrangler.less";

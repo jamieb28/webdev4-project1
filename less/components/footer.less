@@ -1,0 +1,38 @@
+/* =========================================
+
+COMPONENTS/FOOTER.LESS
+
+=========================================*/
+
+
+#footer {
+	.gradient(#111, #111, #222);
+	border-top: #444 1px solid;
+	.container {
+		margin: 0 auto;
+	}
+	.footer-nav ul {
+		list-style: none;
+		padding-left: 0;
+	}
+	.label {
+		color: #fff;
+		margin: 15px 0 6px;
+	}
+	a {
+		color: @grayLight;
+		font-size: 12px;
+		&:hover {
+			color: @colorBrand;
+			text-decoration: none;
+		}
+	}
+	.disclaimers {
+		font-size: 12px;
+		//overflow: hidden;
+		color: @gray;
+		div:first-child {
+			padding-top: 30px;
+		}
+	}
+}
