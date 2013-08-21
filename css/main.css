@@ -3095,7 +3095,7 @@ VIEWS/HOME.LESS
   top: 38%;
   left: 4.3%;
   right: 4.3%;
-  width: 91.5%;
+  width: 91.4%;
 }
 /* =========================================
 
@@ -3129,4 +3129,166 @@ VIEWS/WRANGLER.LESS
 #page-wrangler .hero .heroBox p {
   font-size: 15px;
   line-height: 24px;
+  padding: 0;
+  margin-top: 0;
+}
+#page-wrangler .hero .heroBox a.callToActionLink {
+  text-transform: uppercase;
+  color: #FFB302;
+  display: block;
+  font-size: 12px;
+  line-height: 20px;
+  margin-bottom: 0;
+  text-decoration: none;
+  cursor: pointer;
+}
+#page-wrangler .hero .heroBox button {
+  margin-top: 12px;
+  color: #2c2c2c;
+  display: inline-block;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  font: bold 11px 'Montserrat', Arial, Helvetica, sans-serif;
+  padding: 6px 10px;
+  text-shadow: 0 1px 1px #fff;
+  -webkit-border-radius: 3px;
+  background-color: #ffcc03;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffcc03), to(#ff9f02));
+  background-image: -webkit-linear-gradient(top, #ffcc03, #ff9f02);
+  background-image: -moz-linear-gradient(top, #ffcc03, #ff9f02);
+  background-image: -o-linear-gradient(top, #ffcc03, #ff9f02);
+  background-image: linear-gradient(to bottom, #ffcc03, #ff9f02);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffcc03', endColorstr='#ff9f02')";
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffcc03', endColorstr='#ff9f02');
+}
+#page-wrangler div.wranglerInfo {
+  width: 950px;
+  background: #fff;
+  color: #666666;
+  margin: -40px auto 0;
+  position: relative;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  overflow: hidden;
+}
+#page-wrangler div.wranglerInfo div#pricingIncentives {
+  margin: 0;
+  padding: 15px 30px 5px 30px;
+  display: block;
+  margin-bottom: 40px;
+  color: #212221;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  background: #fff;
+  overflow: hidden;
+}
+#page-wrangler div.wranglerInfo div#pricingIncentives div.price {
+  float: left;
+  padding: 0 18px 0 0;
+  width: 140px;
+  color: #212221;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+}
+#page-wrangler div.wranglerInfo div#pricingIncentives p {
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+#page-wrangler div.wranglerInfo div#pricingIncentives .heading {
+  clear: both;
+  font-size: 10px;
+}
+#page-wrangler div.wranglerInfo div#pricingIncentives h2,
+#page-wrangler div.wranglerInfo div#pricingIncentives p,
+#page-wrangler div.wranglerInfo div#pricingIncentives span {
+  margin: 0;
+  padding: 0;
+}
+#page-wrangler div.wranglerInfo div#pricingIncentives .value {
+  font-size: 30px;
+  font-family: Arial, sans-serif;
+  float: left;
+  clear: both;
+}
+#page-wrangler div.wranglerInfo div#pricingIncentives .value span {
+  float: left;
+  font-size: 20px;
+  margin: 3px 0 0;
+}
+#page-wrangler div.wranglerInfo div#pricingIncentives .leaseInfo {
+  float: left;
+  font-size: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  color: #666666;
+  line-height: 10px;
+}
+#page-wrangler div.wranglerInfo div#pricingIncentives .disclaimer {
+  clear: both;
+  color: #999999;
+  font-size: 9px;
+  font-weight: normal;
+}
+#page-wrangler div.wranglerInfo div#pricingIncentives div.lease {
+  float: left;
+  padding: 0 18px 0 0;
+  color: #212221;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+}
+#page-wrangler div.wranglerInfo div#pricingIncentives div.offers {
+  margin: 0px;
+  padding: 0px;
+  width: auto;
+  float: right;
+}
+#page-wrangler div.wranglerInfo div.press {
+  background: url('../img/wrangler/awards-background.jpg') no-repeat;
+}
+#page-wrangler div.wranglerInfo div.press .pressContainer {
+  width: 575px;
+  overflow: hidden;
+  position: relative;
+  z-index: 100;
+  margin: 0 auto 50px;
+  padding: 20px 0;
+}
+#page-wrangler div.wranglerInfo div.press .pressContainer .quote img {
+  float: left;
+}
+#page-wrangler div.wranglerInfo div.press .pressContainer .quote p {
+  float: left;
+  display: block;
+  width: 400px;
+  font-size: 15px;
+  padding-top: 5px;
+  text-align: center;
+  margin: 0;
+}
+#page-wrangler div.wranglerInfo div.press .pressContainer .quote p.award {
+  font-size: 24px;
+}
+#page-wrangler div.wranglerInfo div.colorPicker h2 {
+  font: 52px 'Proxima N W01 Light', Arial, Helvetica, sans-serif;
+  font-size: 48px;
+  color: #444444;
+  text-align: center;
+  padding: 0;
+  margin: 0 0 20px;
+  background: none;
+  text-transform: none !important;
 }

@@ -32,9 +32,10 @@ VIEWS/HOME.LESS
 }
 
 .vehicle-slide #vehicles {
+  @vehiclesDistance: 4.3%;
   position: absolute;
   top: 38%;
-  left: 4.3%;
-  right: 4.3%;
-  width: 91.5%;
+  left: @vehiclesDistance;
+  right: @vehiclesDistance;
+  width: 100%-@vehiclesDistance*2;
 }
