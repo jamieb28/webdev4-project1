@@ -3078,17 +3078,41 @@ VIEWS/HOME.LESS
 #home-features {
   margin-top: -10%;
   position: relative;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+#home-features ul {
+  height: 200px;
 }
 #home-features .thumbnail {
-  border-color: #999999;
-  border-radius: 0;
-  background: rgba(0, 0, 0, 0.5);
-  height: 200px;
-  color: #ffffff;
-  text-align: center;
+  height: 160px;
+  text-indent: -2500px;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0;
+  border: none;
+  width: 100%;
+}
+#home-features a.thumbnail.one {
+  background: url('../../img/home/promos.png') no-repeat -10px -5px;
+  position: absolute;
+}
+#home-features a.thumbnail.two {
+  background: url('../../img/home/promos.png') no-repeat -248px -5px;
+  position: absolute;
+}
+#home-features a.thumbnail.three {
+  background: url('../../img/home/promos.png') no-repeat -486px -5px;
+  position: absolute;
+}
+#home-features a.thumbnail.four {
+  background: url('../../img/home/promos.png') no-repeat -725px -5px;
+  position: absolute;
 }
 #home-features img {
   height: auto;
+}
+img#vehicleBackground {
+  width: 100%;
 }
 .vehicle-slide #vehicles {
   position: absolute;
@@ -3096,6 +3120,9 @@ VIEWS/HOME.LESS
   left: 4.3%;
   right: 4.3%;
   width: 91.4%;
+}
+.cherokee-slide {
+  margin-top: 102px;
 }
 /* =========================================
 
@@ -3114,11 +3141,11 @@ VIEWS/WRANGLER.LESS
   background: url(../img/wrangler/heroHeading.png) no-repeat;
   width: 100%;
   height: 118px;
-  margin-top: 30px;
+  margin: 30px 0 0 15px;
 }
 #page-wrangler .hero .heroBox {
   padding: 15px;
-  margin-top: 25px;
+  margin: 25px 0 0 15px;
   left: 0px !important;
   background-color: rgba(0, 0, 0, 0.5);
   position: relative;
@@ -3141,6 +3168,11 @@ VIEWS/WRANGLER.LESS
   margin-bottom: 0;
   text-decoration: none;
   cursor: pointer;
+}
+#page-wrangler .hero .heroBox a.callToActionLink span.glyphicon {
+  background-color: #FFB302;
+  height: auto;
+  width: auto;
 }
 #page-wrangler .hero .heroBox button {
   margin-top: 12px;
@@ -3282,8 +3314,11 @@ VIEWS/WRANGLER.LESS
 #page-wrangler div.wranglerInfo div.press .pressContainer .quote p.award {
   font-size: 24px;
 }
+#page-wrangler div.wranglerInfo div.colorPicker {
+  width: 100%;
+}
 #page-wrangler div.wranglerInfo div.colorPicker h2 {
-  font: 52px 'Proxima N W01 Light', Arial, Helvetica, sans-serif;
+  font: Lato, Arial, Helvetica, sans-serif;
   font-size: 48px;
   color: #444444;
   text-align: center;
@@ -3291,4 +3326,138 @@ VIEWS/WRANGLER.LESS
   margin: 0 0 20px;
   background: none;
   text-transform: none !important;
+}
+#page-wrangler div.wranglerInfo div.colorPicker .carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 0%;
+  z-index: 15;
+  width: 400px;
+  height: 42px;
+  margin-left: 40px;
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
+}
+#page-wrangler div.wranglerInfo div.colorPicker .carousel-indicators li.indicator {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  text-indent: -999px;
+  border: none;
+  border-radius: none;
+  cursor: pointer;
+}
+#page-wrangler div.wranglerInfo div.colorPicker .carousel-indicators li.blackSwatch {
+  background: url('../../img/wrangler/colorizer/sprite_colorizer.png') no-repeat 0px 0px;
+}
+#page-wrangler div.wranglerInfo div.colorPicker .carousel-indicators li.greenSwatch {
+  background: url('../../img/wrangler/colorizer/sprite_colorizer.png') no-repeat -40px 0px;
+}
+#page-wrangler div.wranglerInfo div.colorPicker .carousel-indicators li.redSwatch {
+  background: url('../../img/wrangler/colorizer/sprite_colorizer.png') no-repeat -80px 0px;
+}
+#page-wrangler div.wranglerInfo div.colorPicker .carousel-indicators li.whiteSwatch {
+  background: url('../../img/wrangler/colorizer/sprite_colorizer.png') no-repeat -120px 0px;
+}
+#page-wrangler div.wranglerInfo div.colorPicker .carousel-indicators li.silverSwatch {
+  background: url('../../img/wrangler/colorizer/sprite_colorizer.png') no-repeat -160px 0px;
+}
+#page-wrangler div.wranglerInfo div.colorPicker .carousel-indicators li.blueSwatch {
+  background: url('../../img/wrangler/colorizer/sprite_colorizer.png') no-repeat -200px 0px;
+}
+#page-wrangler div.wranglerInfo div.colorPicker .carousel-indicators li.duneSwatch {
+  background: url('../../img/wrangler/colorizer/sprite_colorizer.png') no-repeat -240px 0px;
+}
+#page-wrangler div.wranglerInfo div.colorPicker .carousel-indicators li.darkredSwatch {
+  background: url('../../img/wrangler/colorizer/sprite_colorizer.png') no-repeat -280px 0px;
+}
+#page-wrangler div.wranglerInfo div.colorPicker .carousel-indicators li.brownSwatch {
+  background: url('../../img/wrangler/colorizer/sprite_colorizer.png') no-repeat -320px 0px;
+}
+#page-wrangler div.wranglerInfo div.colorPicker div.vehicleInfo {
+  position: absolute;
+  top: 440px;
+  left: 55px;
+  z-index: 100;
+  width: 310px;
+}
+#page-wrangler div.wranglerInfo div.colorPicker div.vehicleInfo h3 {
+  font: 30px Lato, Arial, Helvetica, sans-serif;
+  color: #444444;
+  padding: 0;
+  margin: 0 0 20px;
+  background: none;
+}
+#page-wrangler div.wranglerInfo div.colorPicker div.vehicleInfo .leaseOffer {
+  background: url('../../img/wrangler/background-lease-offer.png') no-repeat;
+  width: 213px;
+  height: 81px;
+  position: relative;
+  float: left;
+  margin: 0px 10px 0 -15px;
+}
+#page-wrangler div.wranglerInfo div.colorPicker div.vehicleInfo .leaseOffer .leaseDetails {
+  padding-left: 35px;
+  padding-top: 12px;
+  float: left;
+  font-family: "Helvetica", Arial, sans-serif;
+  width: 91px;
+}
+#page-wrangler div.wranglerInfo div.colorPicker div.vehicleInfo .leaseOffer .leaseDetails p {
+  margin: 0;
+}
+#page-wrangler div.wranglerInfo div.colorPicker div.vehicleInfo .leaseOffer .leaseDetails p.leaseCopy {
+  float: left;
+  display: block;
+  font-size: 9px;
+  text-transform: uppercase;
+}
+#page-wrangler div.wranglerInfo div.colorPicker div.vehicleInfo .leaseOffer .leaseDetails p.leasePrice {
+  display: block;
+  font-size: 30px;
+  float: left;
+  margin-top: -5px;
+}
+#page-wrangler div.wranglerInfo div.colorPicker div.vehicleInfo .leaseOffer .leaseDetails p.leasePrice span {
+  float: left;
+  display: block;
+  font-size: 9px;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+#page-wrangler div.wranglerInfo div.colorPicker div.vehicleInfo .leaseOffer p.terms {
+  float: left;
+  width: 65px;
+  margin-left: 10px;
+  font-size: 9px;
+  text-transform: uppercase;
+  padding-top: 8px;
+}
+#page-wrangler div.wranglerInfo div.colorPicker div.vehicleInfo p.leaseDisclaimer {
+  font-size: 10px;
+  width: 100px;
+  color: #4e4e4e;
+  position: relative;
+  margin: 0;
+  float: left;
+}
+#page-wrangler div.wranglerInfo div.colorPicker div.vehicleInfo ul.modelFeatures {
+  float: left;
+  width: 300px;
+  display: block;
+  padding: 0px;
+  position: relative;
+  color: #000000;
+  line-height: 14px;
+  font-weight: bold;
+  font-size: 12px;
+}
+#page-wrangler div.wranglerInfo div.colorPicker div.vehicleInfo ul.modelFeatures li {
+  color: #444444;
+  font-size: 11px;
+  margin: 0 15px 0px 0px;
+  list-style: disc outside none;
+  line-height: 14px;
 }

@@ -16,19 +16,50 @@ VIEWS/HOME.LESS
 #home-features {
   margin-top: -10%;
   position: relative;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+
+#home-features ul{
+  height: 200px;
 }
 
 #home-features .thumbnail {
-  border-color: #999999;
-  border-radius: 0;
-  background: rgba(0, 0, 0, 0.5);
-  height: 200px;
-  color: @white;
-  text-align: center;
+  height: 160px;
+  text-indent: -2500px;
+  background-color: rgba(0,0,0,0);
+  padding:0;
+  border: none;
+  width: 100%;
 }
+
+#home-features a.thumbnail.one{
+  background: url('../../img/home/promos.png')no-repeat -10px -5px;
+  position: absolute;
+}
+
+#home-features a.thumbnail.two{
+  background: url('../../img/home/promos.png') no-repeat -248px -5px;
+  position: absolute;
+}
+
+#home-features a.thumbnail.three{
+  background: url('../../img/home/promos.png') no-repeat -486px -5px;
+  position: absolute;
+}
+
+#home-features a.thumbnail.four{
+  background: url('../../img/home/promos.png') no-repeat -725px -5px;
+  position: absolute;
+}
+
 
 #home-features img {
   height: auto;
+}
+
+img#vehicleBackground{
+  width: 100%;
 }
 
 .vehicle-slide #vehicles {
@@ -38,4 +69,8 @@ VIEWS/HOME.LESS
   left: @vehiclesDistance;
   right: @vehiclesDistance;
   width: 100%-@vehiclesDistance*2;
+}
+
+.cherokee-slide {
+  margin-top: 102px;
 }
